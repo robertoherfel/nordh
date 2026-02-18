@@ -1,4 +1,4 @@
 behave==1.2.6
 playwright==1.40.0
 pyyaml==6.0.1
-allure-behave==2.30.0
+allure-behave==2.8.40
