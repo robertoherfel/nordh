@@ -1,10 +1,7 @@
-"""
-Locators utility module for managing element selectors and configuration
-"""
-import yaml
-import os
+
 from pathlib import Path
 from typing import List, Dict, Any
+import yaml
 
 
 class PageManager:
@@ -14,8 +11,7 @@ class PageManager:
         """
         Initialize the Page Manager
 
-        Args:
-            pages_dir: Directory containing page YAML files
+        params: pages_dir: Directory containing page YAML files
         """
         self.pages_dir = pages_dir
         self.pages = self._load_pages()
@@ -24,10 +20,9 @@ class PageManager:
         """
         Get combined locator string for Playwright
 
-        Args:
-            page: Page name (e.g., 'home')
-            section: Section name (e.g., 'google')
-            element: Element name (e.g., 'cookie_accept_button')
+        params: page: Page name (e.g., 'home')
+        params: section: Section name (e.g., 'google')
+        params: element: Element name (e.g., 'cookie_accept_button')
 
         Returns:
             Combined locator string separated by commas
@@ -41,10 +36,9 @@ class PageManager:
         """
         Get locators list from page YAML
 
-        Args:
-            page: Page name (yaml filename without extension)
-            section: Section name inside the YAML
-            element: Element name
+        params page: Page name (yaml filename without extension)
+        params section: Section name inside the YAML
+        params element: Element name
 
         Returns:
             List of locators
@@ -59,6 +53,8 @@ class PageManager:
     def _load_pages(self) -> Dict[str, Dict[str, Any]]:
         """
         Load all YAML files from pages directory into a dictionary
+        Returns:
+            Dictionary with page names as keys and their content as values
         """
         current_dir = Path(__file__).parent
         project_root = current_dir.parent
