@@ -40,14 +40,16 @@ pip install -r requirements.txt
 ```
 
 3. **Install Playwright browsers:**
-For chrome/chromium:
+#### For chrome/chromium:
 ```bash
 playwright install chromium
 playwright install chrome
 ```
-For other browsers:
+#### For other browsers:
+```bash
 playwright install firefox
 playwright install webkit
+```
 
 ## Running Tests
 
