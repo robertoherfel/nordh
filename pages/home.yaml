@@ -1,0 +1,9 @@
+home_page:
+  customer_login:
+    - button:has-text("Customer Login")
+
+  bank_manager_login:
+    - 'button:has-text("Bank Manager Login")'
+
+  logo:
+    - 'strong:has-text("XYZ Bank")'

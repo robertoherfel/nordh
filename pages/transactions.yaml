@@ -1,0 +1,3 @@
+transactions_page:
+  transactions_table:
+    - 'tr[ng-repeat^="tx"]'

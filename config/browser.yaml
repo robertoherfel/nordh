@@ -1,0 +1,20 @@
+# Timeout configurations in milliseconds
+timeouts:
+  page_load: 5000
+  element_visible: 2000
+  default_wait: 1000
+
+# URL configurations
+urls:
+  bank_homepage: "https://www.globalsqa.com/angularJs-protractor/BankingProject"
+
+# Browser configurations
+browser:
+  name: chrome        # chrome | chromium | firefox
+  headless: false
+  viewport:
+    width: 1920
+    height: 1080
+  slowmo: 200 # Milliseconds to slow down operations
+  devtools: false
+

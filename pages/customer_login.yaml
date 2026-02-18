@@ -1,0 +1,33 @@
+customer_login_page:
+  your_name_selector:
+    - '#userSelect'
+
+  login_button:
+    - 'button:has-text("Login")'
+
+  login_welcome:
+    - 'button:has-text("Welcome")'
+
+  login_transactions:
+    - 'button:has-text("Transactions ")'
+
+  login_deposit:
+    - 'button:has-text("Deposit ")'
+
+  login_withdrawl:
+    - 'button:has-text("Withdrawl ")'
+
+  logout:
+    - 'button:has-text("Logout")'
+
+  deposit_action:
+    - 'button[type="submit"]:has-text("Deposit")'
+
+  withdrawl_action:
+    - 'button[type="submit"]:has-text("Withdraw")'
+
+  money_ballance:
+    - '//div[contains(@class,"center")]//text()[contains(.,"Balance")]//following::strong[1]'
+
+  money_input:
+    - 'amount'
