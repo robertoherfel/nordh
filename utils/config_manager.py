@@ -18,7 +18,6 @@ class ConfigManager:
             config_file: filename of the configuration yaml file.
         """
         self.config_file = config_file
-
         self.config = self._load_config()
 
     def _load_config(self) -> Dict[str, Any]:

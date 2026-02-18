@@ -18,7 +18,6 @@ class PageManager:
             pages_dir: Directory containing page YAML files
         """
         self.pages_dir = pages_dir
-
         self.pages = self._load_pages()
 
     def get_combined_locator(self, page: str, section: str, element: str) -> str:
